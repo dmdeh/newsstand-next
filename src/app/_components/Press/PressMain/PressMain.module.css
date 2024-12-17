@@ -1,11 +1,12 @@
 .pressContainer {
+  width: 100%;
   display: flex;
   position: relative;
 }
 
 .press {
   height: 388px;
-  width: 930px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -34,8 +35,7 @@
 }
 
 .logo {
-  object-fit: scale-down; /* 비율 유지 */
-  padding: 10px;
+  object-fit: none;
 }
 
 .pressItem:hover {
