@@ -29,11 +29,11 @@ const Press = () => {
         {paginatedLogos.map((logoUrl, index) => (
           <div key={index} className={styles.pressItem}>
             <Image
+              className={styles.logo}
               src={logoUrl}
               alt={`PressLogo${index + 1}`}
-              height={100}
-              width={100}
-              layout="intrinsic"
+              fill
+              sizes="100px"
             />
           </div>
         ))}

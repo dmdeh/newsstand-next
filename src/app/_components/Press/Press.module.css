@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.logo {
+  object-fit: scale-down; /* 비율 유지 */
+}
+
 .left,
 .right {
   position: absolute;
