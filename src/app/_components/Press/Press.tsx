@@ -11,7 +11,7 @@ const totalPages = 4;
 
 const Press = () => {
   const [currentPage, setCurrentPage] = useState(0);
-
+  const [isSubscribe, setIsSubscribe] = useState(false);
   const paginatedLogos = pressLogoData.slice(
     currentPage * itemsPerPage,
     (currentPage + 1) * itemsPerPage
@@ -35,6 +35,16 @@ const Press = () => {
               fill
               sizes="100px"
             />
+            <button
+              onClick={() => setIsSubscribe(!isSubscribe)}
+              style={{
+                backgroundColor: isSubscribe
+                  ? "rgba(245, 247, 249, 1)"
+                  : "white",
+              }}
+            >
+              {isSubscribe ? "x 해지하기" : "+ 구독하기"}
+            </button>
           </div>
         ))}
       </div>
