@@ -1,4 +1,4 @@
-import styles from "@/components/RolllingNews/RollingNews.module.css";
+import styles from "@/app/_components/RolllingNews/RollingNews.module.css";
 
 const RollingNews = () => {
   return (
