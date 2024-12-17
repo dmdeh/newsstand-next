@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ["s.pstatic.net"],
+    // Error: Invalid src prop hostname "s.pstatic.net" is not configured under images in your next.config.js
+  },
 };
 
 export default nextConfig;

@@ -1,8 +1,40 @@
+.pressContainer {
+  display: flex;
+  position: relative;
+}
+
 .press {
   height: 600px;
-  width: 100%;
+  width: 1310px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  border: 1px solid;
+  border-top: 2px solid #e0e0e0;
+  border-left: 2px solid #e0e0e0;
+}
+
+.pressItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  cursor: pointer;
+  color: #e0e0e0;
+}
+
+.left {
+  left: -100px;
+}
+
+.right {
+  right: -100px;
 }
